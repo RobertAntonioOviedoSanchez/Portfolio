@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;800&display=swap'); /* FONT FAMILY */
+/* color para el fondo y cartas ------- #491d88 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#inicio {
+    background: linear-gradient(rgb(0,0,0,.7), rgb(0,0,0,.7)), url("fondo-programacion-2.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+}
+
+/* ---------------------------------- NAVBAR ------------------------------------ */
+#inicio .contenido header {
+    background-color: rgba(0,0,0,.8);
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    top: 0;
+}
+
+#inicio .contenido header .contenido-header {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+#inicio .contenido header .contenido-header h1 {
+    text-align: center;
+    /* color: rebeccapurple; */
+    color: #8400ff;
+}
+
+#inicio .contenido header .contenido-header nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+#inicio .contenido header .contenido-header nav ul li a {
+    text-decoration: none;
+    color: white;
+    margin: 0 12px;
+    font-weight: 400;
+    transition: .5s;
+}
+
+#inicio .contenido header .contenido-header nav ul a:hover {
+    color: #8400ff;
+}
+
+#icono-nav {
+    color: white;
+    display: none;
+}
+
+/* ---------------------------------- BIENVENIDA / PRESENTACION ------------------------------------ */
+#inicio .contenido .presentacion {
+    max-width: 1100px;
+    height: 100vh;
+    margin: auto;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#inicio .contenido .presentacion .bienvenida {
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+#inicio .contenido .presentacion h2 {
+    font-size: 55px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+#inicio .contenido .presentacion h2 span {
+    color: #8400ff;
+}
+
+#inicio .contenido .presentacion .descripcion {
+    max-width: 700px;
+    margin: 25px auto;
+    font-size: 18px;
+    text-align: center;
+}
+
+#inicio .contenido .presentacion a {
+    text-decoration: none;
+    display: inline-block;
+    margin: 25px;
+    padding: 20px 25px;
+    border: 2px solid white;
+    border-radius: 50px;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: .5s;
+}
+
+#inicio .contenido .presentacion a:hover {
+    background-color: #491d88;
+}
+
+/* ---------------------------------- SOBRE MI ------------------------------------ */
+#contenedor-sobremi {
+    background-color: black;
+}
+
+#sobremi {
+    max-width: 1100px;
+    margin: auto;
+    padding: 100px 15px;
+    color: white;
+    display: flex;
+    background-color: black;
+}
+
+#sobremi .contenedor-foto {
+    max-width: 400px;
+    margin-right: 80px;
+}
+
+#sobremi .contenedor-foto img {
+    padding: 5px;
+    width: 100%;
+    border-radius: 20px;
+    background-color: #491d88;
+}
+
+#sobremi .sobremi {
+    margin: 0 40px;
+}
+
+#sobremi .sobremi .titulo-seccion {
+    font-size: 22px;
+    text-transform: uppercase;
+    color: white;
+    text-decoration: underline;
+    text-decoration-color: #491d88;
+    text-decoration-thickness: 5px;
+}
+
+#sobremi .sobremi h2 {
+    font-size: 34px;
+    font-weight: bold;
+    margin: 20px 0;
+    letter-spacing: 1px;
+}
+
+#sobremi .sobremi h2 span {
+    color: #8400ff;
+}
+
+#sobremi .sobremi h3 {
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+#sobremi .sobremi p {
+    /* font-size: 14px; */
+    line-height: 25px;
+    color: whitesmoke;
+    margin-bottom: 12px;
+}
+
+/* ---------------------------------- HABILIDADES ------------------------------------ */
+#servicios {
+    padding: 100px 15px;
+    text-align: center;
+    background-color: black;
+}
+
+#servicios .titulo-seccion {
+    font-size: 22px;
+    text-transform: uppercase;
+    color: white;
+    text-decoration: underline;
+    text-decoration-color: #491d88;
+    text-decoration-thickness: 5px;
+}
+
+#servicios .fila {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: 30px auto;
+}
+
+#servicios .fila .servicio {
+    max-width: 350px;
+    background-color: #fff;
+    padding: 30px;
+    margin: 10px 5px;
+    border-radius: 10px;
+    transition: .5s;
+}
+
+#servicios .fila .servicio:hover {
+    box-shadow: 5px 5px 10px #cccaca, -5px -5px 10px #dddcdc;
+}
+
+#servicios .fila .servicio h4 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+#servicios .fila .servicio hr {
+    width: 30%;
+    margin: auto;
+    color: black;
+    margin-bottom: 20px;
+}
+
+#servicios .fila .servicio img {
+    height: 200px;
+    width: 200px;
+    padding: 20px;
+}
+
+

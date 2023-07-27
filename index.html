@@ -3,11 +3,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles.css">
     <title>Portfolio</title>
 </head>
 <body>
-    <h1>Holaaa</h1>
+    <!--------------- PARTE NAVBAR E INFORMACION DE BIENVENIDA --------------->
+    <section id="inicio">
+        <div class="contenido">
+            <!-- LO QUE ESTA ADENTRO DEL HEADER ES LA NAVBAR -->
+            <header>
+                <div class="contenido-header">
+                    <h1>ROBERT OVIEDO</h1>
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <li><a href="#inicio" class="seleccionado">INICIO</a></li>
+                            <li><a href="#sobremi">SOBRE MI</a></li>
+                            <li><a href="#servicios">HABILIDADES</a></li>
+                            <li><a href="#proyectos">PROYECTOS</a></li>
+                            <li><a href="#contacto">CONTACTO</a></li>
+                        </ul>
+                    </nav>
+
+                    <!-- ICONO DEL NAV RESPONSIVE -->
+                    <div id="icono-nav">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </div>
+            </header>
+
+            <!-- BIENVENIDA / PRESENTACION -->
+            <div class="presentacion">
+                <p class="bienvenida">Bienvenido</p>
+                <h2>Soy <span>Robert Oviedo</span>, Full Stack Developer</h2>
+                <p class="descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates at, consequatur minus repellat blanditiis fuga doloribus cumque itaque officia quidem eveniet, architecto laborum! Modi, doloremque. Quae dignissimos ipsa dolorem quasi.</p>
+                <a href="#proyectos">Ver Proyectos</a>
+            </div>
+        </div>
+    </section>
+
+    <!--------------- PARTE SOBRE MI --------------->
+    <div id="contenedor-sobremi">
+        <section id="sobremi">
+            <div class="contenedor-foto">
+                <img src="foto-carnet.jpeg" alt="foto del autor">
+            </div>
+            <div class="sobremi">
+                <p class="titulo-seccion">Sobre Mi</p>
+                <h2>Hola, soy <span>Robert Oviedo</span></h2>
+                <h3>Full Stack Developer</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia consectetur nisi exercitationem officiis labore earum! Neque, obcaecati dolores, odit impedit rerum repellendus qui delectus magni similique temporibus error quaerat doloremque!</p>
+            </div>
+        </section>
+    </div>
+
+    <hr>
+
+    <!--------------- PARTE DE HABILIDADES TECNICAS --------------->
+    <section id="servicios">
+        <h3 class="titulo-seccion">HABILIDADES TECNICAS</h3>
+        <div class="fila">
+            <div class="servicio">
+                <img src="javascript.png" alt="javascript">
+                <hr>
+                <h4>JavaScript</h4>
+            </div>
+
+            <div class="servicio">
+                <img src="react.png" alt="react">
+                <hr>
+                <h4>React</h4>
+            </div>
+
+            <div class="servicio">
+                <img src="redux_imagen.png" alt="redux">
+                <hr>
+                <h4>Redux</h4>
+            </div>
+
+            <div class="servicio">
+                <img src="html5.jpg" alt="html5">
+                <hr>
+                <h4>HTML5</h4>
+            </div>
+
+            <div class="servicio">
+                <img src="css3.png" alt="css3">
+                <hr>
+                <h4>CSS3</h4>
+            </div>
+
+            <div class="servicio">
+                <img src="nodejs.jpg" alt="nodeJS">
+                <hr>
+                <h4>Node.JS</h4>
+            </div>
+
+            <div class="servicio">
+                <img src="express.png" alt="express">
+                <hr>
+                <h4>Express</h4>
+            </div>
+
+            <div class="servicio">
+                <img src="Logo-PostgreSQL.png" alt="postgreSQL">
+                <hr>
+                <h4>PostgreSQL</h4>
+            </div>
+
+            <div class="servicio">
+                <img src="mongo2.jpg" alt="mongoDB">
+                <hr>
+                <h4>MongoDB</h4>
+            </div>
+        </div>
+    </section>
     
 
     <script src="script.js"></script>
