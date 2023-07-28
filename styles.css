@@ -11,6 +11,7 @@ html {
     scroll-behavior: smooth;
 }
 
+/*--- Imagen de fondo que solo se muestra en la bienvenida ---*/
 #inicio {
     background: linear-gradient(rgb(0,0,0,.7), rgb(0,0,0,.7)), url("fondo-programacion-2.jpg");
     background-size: cover;
