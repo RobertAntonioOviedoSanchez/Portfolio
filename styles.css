@@ -65,6 +65,10 @@ html {
     display: none;
 }
 
+#inicio .contenido header .contenido-header .seleccionado {
+    color: #8400ff;
+}
+
 /* ---------------------------------- BIENVENIDA / PRESENTACION ------------------------------------ */
 #inicio .contenido .presentacion {
     max-width: 1100px;
@@ -201,7 +205,7 @@ html {
 
 #servicios .fila {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
     max-width: 1100px;
     margin: 30px auto;
@@ -238,4 +242,249 @@ html {
     padding: 20px;
 }
 
+/* ---------------------------------- PROYECTOS ------------------------------------ */
+#container-portfolio {
+    background-color: black;
+}
+#portfolio {
+    max-width: 1100px;
+    padding: 100px 0;
+    margin: auto;
+}
 
+#portfolio .titulo-seccion {
+    text-align: center;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: white;
+    text-decoration: underline;
+    text-decoration-color: #491d88;
+    text-decoration-thickness: 5px;
+}
+
+#portfolio .fila {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0; /*0*/
+    flex-wrap: wrap;
+
+}
+
+#portfolio .fila .proyecto {
+    max-width: 450px;
+    border: 1px solid #8400ff;
+    border-radius: 10px;
+    margin: 10px 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+#portfolio .fila .proyecto img {
+    max-width: 340px;
+    height: 100%;
+    filter: grayscale(1);
+    object-fit: cover;
+    border-radius: 10px;
+    transition: .5s;
+}
+
+#portfolio .fila .proyecto:hover img {
+    filter: grayscale(0);
+}
+
+#portfolio .fila .proyecto .info {
+    position: absolute;
+    left: 0;
+    background-color: rgb(0, 0, 0, .8);
+    color: #8400ff;
+    width: 100%;
+    padding: 10px;
+    opacity: 0;
+    bottom: -40px;
+    transition: .5s;
+}
+
+#portfolio .fila .proyecto:hover .info {
+    opacity: 1;
+    bottom: 0;
+}
+
+/* ---------------------------------- CONTACTO ------------------------------------ */
+#contacto {
+    padding: 100px 15px;
+    background-color: black;
+}
+
+#contacto .titulo-seccion {
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: white;
+    text-decoration: underline;
+    text-decoration-color: #491d88;
+    text-decoration-thickness: 5px;
+}
+
+#contacto .contenedor-form {
+    max-width: 1100px;
+    margin: auto;
+}
+
+#contacto .contenedor-form .fila {
+    margin-bottom: 15px;
+}
+
+#contacto .contenedor-form .mitad {
+    display: flex;
+    justify-content: space-between;
+}
+
+#contacto .contenedor-form input, #contacto .contenedor-form textarea {
+    padding: 20px;
+    border-radius: 15px;
+    border: none;
+    border: 2px solid white;
+    font-size: 18px;
+}
+
+#contacto .contenedor-form .mitad input {
+    width: 49%;
+}
+
+#contacto .contenedor-form .input-full {
+    width: 100%;
+}
+
+#contacto .btn-enviar {
+    display: block;
+    margin: auto;
+    cursor: pointer;
+    transition: .5s;
+    padding: 10px 15px;
+    font-size: 18px;
+    /* border: none; */
+    /* border: 1px solid white; */
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    border-radius: 50px;
+}
+
+#contacto .btn-enviar:hover {
+    background-color: #8400ff;
+}
+
+.info-contacto {
+    color: white;
+    font-weight: bold;
+}
+
+.texto-contacto {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.link-linkedin {
+    text-decoration: none;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.parrafo-contacto {
+    color: white;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+/* ---------------------------------- FOOTER ------------------------------------ */
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+}
+
+footer a {
+    text-decoration: none;
+    display: inline-block;
+    margin: 5px;
+    font-size: 50px;
+}
+
+
+
+
+
+
+
+/* ---------------------------------- SECCION RESPONSIVE ------------------------------------ */
+@media screen and (max-width:800px) {
+    nav {
+        display: none;
+    }
+
+    nav.responsive {
+        display: block;
+        background-color: rgba(0,0,0,.8);
+        width: 100%;
+        position: absolute;
+        top: 48px;
+        left: 0;
+        padding: 10px 0;
+    }
+
+    nav.responsive ul {
+        display: block !important;
+        text-align: center;
+    }
+
+    nav.responsive ul li {
+        margin: 5px 0;
+    }
+
+    #icono-nav {
+        display: block;
+    }
+
+    #inicio .contenido .presentacion h2 {
+        font-size: 40px;
+    }
+
+    #sobremi {
+        padding: 50px 0;
+        display: block;
+    }
+
+    #sobremi .contenedor-foto {
+        max-width: 200px;
+        margin: auto;
+    }
+
+    #sobremi .contenedor-foto img {
+        padding: 5px;
+    }
+
+    #sobremi .sobremi .titulo-seccion {
+        text-align: center;
+    }
+
+    #sobremi .sobremi h2 {
+        font-size: 25px;
+    }
+
+    #contacto {
+        padding: 50px 15px;
+    }
+
+    #contacto .contenedor-form .mitad {
+        margin-bottom: 15px;
+        display: block;
+    }
+
+    #contacto .contenedor-form .mitad input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}

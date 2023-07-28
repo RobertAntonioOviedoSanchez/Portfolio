@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles.css">
     <title>Portfolio</title>
@@ -17,16 +17,16 @@
                     <h1>ROBERT OVIEDO</h1>
                     <nav id="nav" class="">
                         <ul id="links">
-                            <li><a href="#inicio" class="seleccionado">INICIO</a></li>
-                            <li><a href="#sobremi">SOBRE MI</a></li>
-                            <li><a href="#servicios">HABILIDADES</a></li>
-                            <li><a href="#proyectos">PROYECTOS</a></li>
-                            <li><a href="#contacto">CONTACTO</a></li>
+                            <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
+                            <li><a href="#sobremi" onclick="seleccionar(this)">SOBRE MI</a></li>
+                            <li><a href="#servicios" onclick="seleccionar(this)">HABILIDADES</a></li>
+                            <li><a href="#portfolio" onclick="seleccionar(this)">PROYECTOS</a></li>
+                            <li><a href="#contacto" onclick="seleccionar(this)">CONTACTO</a></li>
                         </ul>
                     </nav>
 
                     <!-- ICONO DEL NAV RESPONSIVE -->
-                    <div id="icono-nav">
+                    <div id="icono-nav" onclick="responsiveMenu()">
                         <i class="fa-solid fa-bars"></i>
                     </div>
                 </div>
@@ -37,7 +37,7 @@
                 <p class="bienvenida">Bienvenido</p>
                 <h2>Soy <span>Robert Oviedo</span>, Full Stack Developer</h2>
                 <p class="descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates at, consequatur minus repellat blanditiis fuga doloribus cumque itaque officia quidem eveniet, architecto laborum! Modi, doloremque. Quae dignissimos ipsa dolorem quasi.</p>
-                <a href="#proyectos">Ver Proyectos</a>
+                <a href="#portfolio">Ver Proyectos</a>
             </div>
         </div>
     </section>
@@ -118,6 +118,104 @@
             </div>
         </div>
     </section>
+
+    <hr>
+
+    <!--------------- PARTE DE PROYECTOS --------------->
+    <div id="container-portfolio">
+        <section id="portfolio">
+            <h3 class="titulo-seccion">PROYECTOS</h3>
+            <div class="fila">
+                <div class="proyecto">
+                    <a href="https://plumalibreria.vercel.app/" target="_blank">
+                        <div class="overlay"></div>
+                        <img src="pluma-libreria.png" alt="">
+                        <div class="info">
+                            <h4>Pluma Libreria E-commerce</h4>
+                            <p>JavaScript | React | Redux Toolkit | Node.JS | Express | MongoDB</p>
+                        </div>
+                    </a>
+                </div>
+    
+                <div class="proyecto">
+                    <a href="https://www.youtube.com/watch?v=gq_zvM4_EYw" target="_blank">
+                        <div class="overlay"></div>
+                        <img src="videogames-proyect.png" alt="">
+                        <div class="info">
+                            <h4>Videogames App</h4>
+                            <p>JavaScript | React | Redux | Node.JS | Express | PostgreSQL</p>
+                        </div>
+                    </a>
+                </div>
+    
+                <div class="proyecto">
+                    <a href="https://www.youtube.com/watch?v=_6spkzaavOc" target="_blank">
+                        <div class="overlay"></div>
+                        <img src="rym-proyect.png" alt="">
+                        <div class="info">
+                            <h4>Rick & Morty App</h4>
+                            <p>JavaScript | React | Redux | Node.JS | Express | PostgreSQL</p>
+                        </div>
+                    </a>
+                </div>
+    
+                <div class="proyecto">
+                    <a href="https://color-game-robert-oviedo.netlify.app/" target="_blank">
+                        <div class="overlay"></div>
+                        <img src="color-game.png" alt="">
+                        <div class="info">
+                            <h4>Color Game</h4>
+                            <p>JavaScript | HTML5 | CSS3</p>
+                        </div>
+                    </a>
+                </div>
+    
+                <div class="proyecto">
+                    <a href="https://weather-channel-robert-oviedo.netlify.app/" target="_blank">
+                        <div class="overlay"></div>
+                        <img src="weather-channel.png" alt="">
+                        <div class="info">
+                            <h4>Weather Channel</h4>
+                            <p>JavaScript | HTML5 | CSS3</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <hr>
+
+    <!--------------- PARTE DE CONTACTO --------------->
+    <section id="contacto">
+        <h3 class="titulo-seccion">CONTACTAME</h3>
+        <div class="contenedor-form">
+            <p class="info-contacto"><i class="fa-solid fa-location-dot" style="color: #ffffff;"></i> Direccion</p>
+            <p class="texto-contacto">Mérida, Venezuela</p>
+            <p class="info-contacto"><i class="fa-solid fa-envelope" style="color: #ffffff;"></i> Email</p>
+            <p class="texto-contacto">robertoviedo35@gmail.com</p>
+            <p class="info-contacto"><i class="fa-brands fa-linkedin" style="color: #ffffff;"></i> <a href="https://www.linkedin.com/in/robert-oviedo-8b529a240/" target="_blank" class="link-linkedin">Linkedin</a></p>
+            <p class="parrafo-contacto">Tambien puedes contactarme por medio del siguiente formulario. Estare respondiendo lo mas pronto posible.</p>
+            <form action="">
+                <div class="fila mitad">
+                    <input type="text" placeholder="Nombre y Apellido" class="input-mitad">
+                    <input type="email" placeholder="Email" class="input-mitad">
+                </div>
+                <div class="fila">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Deja un mensaje..." class="input-full"></textarea>
+                    <input type="submit" value="Enviar" class="btn-enviar">
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <hr>
+
+    <!--------------- PARTE DE FOOTER --------------->
+    <footer>
+        <a href="https://www.linkedin.com/in/robert-oviedo-8b529a240/" target="_blank"><i class="fa-brands fa-linkedin" style="color: #ffffff;"></i></a>
+        <a href="https://github.com/RobertAntonioOviedoSanchez" target="_blank"><i class="fa-brands fa-github" style="color: #ffffff;"></i></a>  
+    </footer>
     
 
     <script src="script.js"></script>
