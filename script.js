@@ -25,3 +25,29 @@ const seleccionar = (link) => {
     const nav = document.getElementById("#nav")
     nav.className = ""
 }
+
+
+// FUNCTION PARA VALIDAR AEL FORMULARIO
+const validate = () => {
+    let form = document.querySelector("form")
+
+    if (form.nombre.value == 0) {
+        form.nombre.value = ""
+        form.nombre.focus()
+        return false
+    }
+
+    if (form.email.value == 0) {
+        form.email.value = ""
+        form.email.focus()
+        return false
+    }
+
+    if (form.mensaje.value == 0) {
+        form.mensaje.value = ""
+        form.mensaje.focus()
+        return false
+    }
+
+    form.submit()
+}

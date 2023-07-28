@@ -196,14 +196,15 @@
             <p class="texto-contacto">robertoviedo35@gmail.com</p>
             <p class="info-contacto"><i class="fa-brands fa-linkedin" style="color: #ffffff;"></i> <a href="https://www.linkedin.com/in/robert-oviedo-8b529a240/" target="_blank" class="link-linkedin">Linkedin</a></p>
             <p class="parrafo-contacto">Tambien puedes contactarme por medio del siguiente formulario. Estare respondiendo lo mas pronto posible.</p>
-            <form action="">
+
+            <form action="https://formspree.io/f/xknanwvd" method="POST" onsubmit="return validate()">
                 <div class="fila mitad">
-                    <input type="text" placeholder="Nombre y Apellido" class="input-mitad">
-                    <input type="email" placeholder="Email" class="input-mitad">
+                    <input type="text" name="nombre" placeholder="Nombre y Apellido" class="input-mitad">
+                    <input type="email" name="email" placeholder="Email" class="input-mitad">
                 </div>
                 <div class="fila">
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Deja un mensaje..." class="input-full"></textarea>
-                    <input type="submit" value="Enviar" class="btn-enviar">
+                    <textarea name="mensaje" id="" cols="30" rows="10" placeholder="Deja un mensaje..." class="input-full"></textarea>
+                    <input onclick="validate()" type="submit" value="Enviar" class="btn-enviar">
                 </div>
             </form>
         </div>
